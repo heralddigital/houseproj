@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+.env
+.env.local
+.env*.local
+
+.DS_Store
+npm-debug.log*
+
+# generated at build time from node_modules/pdfjs-dist
+public/pdf.worker.min.mjs

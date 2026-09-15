@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #f6f5f3;
+  color: #1c1b19;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The plan canvas must never smooth away hairlines when zoomed in. */
+.plan-image {
+  image-rendering: -webkit-optimize-contrast;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hatch-demolish {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(220, 38, 38, 0.25) 0 4px,
+    transparent 4px 8px
+  );
+}
